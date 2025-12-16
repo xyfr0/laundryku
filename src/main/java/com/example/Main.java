@@ -5,8 +5,7 @@ import java.util.*;
 
 public class Main {    
 
-    public static void main(String[] args) {
-        Employee employee = new Employee();
+    public static void main(String[] args) {        
         List<Order> orders = new ArrayList<>();
         List<ServiceType> serviceTypes = getServiceTypes(); 
         List<Item> itemsList = new ArrayList<>();
