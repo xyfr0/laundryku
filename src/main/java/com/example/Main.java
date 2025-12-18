@@ -29,6 +29,8 @@ public class Main {
         List<ServiceType> serviceTypes = serviceType.getServiceTypes();
         Fragrance fragrance = new Fragrance();
         List<Fragrance> fragrances = fragrance.getFragrances();
+        Item items = new Item();
+        List<Item> itemsList = items.getItems();
         int count = 0;
 
         Scanner in = new Scanner(System.in);
@@ -51,7 +53,7 @@ public class Main {
             .anyMatch(c -> c.getCustomer_name().trim().equalsIgnoreCase(trimmedCustomerName));
 
         if (!customerExists) {
-            System.out.println("Nama pelanggan tidak ditemukan dalam data. Silakan buat akun pelanggan terlebih dahulu.");
+            System.out.println("\nNama pelanggan tidak ditemukan dalam data. Silakan buat akun pelanggan terlebih dahulu.");
             in.close();
             return;
         }
